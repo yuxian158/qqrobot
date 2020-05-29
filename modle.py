@@ -2,7 +2,6 @@ import urllib.parse
 
 import requests
 
-
 class mess():
     url = 'https://v1.alapi.cn/api/'
 
@@ -10,7 +9,7 @@ class mess():
         url = self.url + state
         payload = "format=json"
         headers = {'Content-Type': "application/x-www-form-urlencoded"}
-        response = requests.request("POST", url, data=payload, headers=headers).json()
+        response = requests.get("POST", url, data=payload, headers=headers).json()
         return response
 
     def get_tiangou(self):  # 舔狗日记
