@@ -3,7 +3,7 @@ from modle import *
 
 bot = CQHttp()
 ex = mess()
-state_num = 0  # 初始状态
+state_num = 2  # 初始状态
 help_text = """ 查题，微博热榜，土味情话，毒鸡汤"""
 
 
@@ -14,6 +14,7 @@ async def stanum(m, event):
         await send(event, data)
     if state_num == 2:
         data =chat(m)
+        data = data.replace('<br/>','\n')
         await send(event,data)
 
 
@@ -22,8 +23,6 @@ async def handle_msg(event):
     global state_num
     message = event.message
     uid = event.user_id
-    print(message)
-    print(type(message))
     if message == "back":
         state_num = 0
         await send(event, "状态已归零")
