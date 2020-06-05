@@ -44,12 +44,12 @@ def ser_title(text):
     data3 = requests.post(url, headers=headers, data=data)
     return data3.json()['data']
 
-def chat(question:chr) ->chr:
-    data = {
-        'key': '3ce2951c30dd74e25803f05efb48dafa',
-        'question': question
-    }
-    r = requests.get('http://api.tianapi.com/txapi/robot/index', params=data)
-    data = r.json()
-
-    return data["newslist"][0]['reply']
+# def chat(question:chr) ->chr:
+#     data = {
+#         'key': '3ce2951c30dd74e25803f05efb48dafa',
+#         'question': question
+#     }
+#     r = requests.get('http://api.tianapi.com/txapi/robot/index', params=data)
+#     data = r.json()
+#
+#     return data["newslist"][0]['reply']
