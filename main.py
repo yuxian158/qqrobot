@@ -1,16 +1,20 @@
 from aiocqhttp.default import on_message, send, api, run, CQHttp
+
 from modle import *
-from xiaobin import chat
+# from xiaobin import chat
+
 bot = CQHttp()
 ex = mess()
-state_num = 2  # 初始状态
+state_num = 1  # 初始状态
 help_text = """ 查题，微博热榜，土味情话，毒鸡汤"""
 
+from exam import ser
 
 async def stanum(m, event):
     global state_num
     if state_num == 1:
-        data = ser_title(m)
+        # data = ser_title(m)
+        data = ser(m)
         await send(event, data)
     if state_num == 2:
         data =chat(m)
@@ -50,4 +54,4 @@ async def handle_msg(event):
         await api.send_private_msg(user_id=event.user_id, message=data)
 
 
-run(host='127.0.0.1', port=8080)
+run(host='127.0.0.1', port=9090)

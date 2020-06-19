@@ -2,7 +2,7 @@ accept: application/json, text/plain, */*
 accept-encoding: gzip, deflate, br
 accept-language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
 content-type: application/x-www-form-urlencoded
-cookie: _T_WM=97909467373; ALF=1593905980; SCF=AtNJNeRis9H7rMWoCZ-4papZ-6vFCbdLsQAyZYsm7vCcGmJbg56yKvBzwstPS3yNpTvcOUluOkNeFQz8aaZM73c.; SUB=_2A25z3fZsDeRhGeBL4loV8SjJzTSIHXVRIZokrDV6PUNbktANLVTjkW1NRq3VcVyDILtk0GSop04YkCKk8MenNvx_; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWRASm.8XQ3HLp2Mc9nIjFO5JpX5KMhUgL.Foqf1KnXeKqfSon2dJLoIE-LxKqLBo-L1h-LxK-LBKBL12qLxK-L1K5LB-eLxK.LBKeL12Hk; SUHB=0JvgH786YZVwtT; WEIBOCN_FROM=1110006030; MLOGIN=1; XSRF-TOKEN=62f9f6
+cookie: _T_WM=97909467373; ALF=1593905980; SCF=AtNJNeRis9H7rMWoCZ-4papZ-6vFCbdLsQAyZYsm7vCcGmJbg56yKvBzwstPS3yNpTvcOUluOkNeFQz8aaZM73c.; SUB=_2A25z3fZsDeRhGeBL4loV8SjJzTSIHXVRIZokrDV6PUNbktANLVTjkW1NRq3VcVyDILtk0GSop04YkCKk8MenNvx_; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWRASm.8XQ3HLp2Mc9nIjFO5JpX5KMhUgL.Foqf1KnXeKqfSon2dJLoIE-LxKqLBo-L1h-LxK-LBKBL12qLxK-L1K5LB-eLxK.LBKeL12Hk; SUHB=0JvgH786YZVwtT; XSRF-TOKEN=640c6f; WEIBOCN_FROM=1110006030; MLOGIN=1
 mweibo-pwa: 1
 origin: https://m.weibo.cn
 referer: https://m.weibo.cn/message/chat?uid=5175429989&name=msgbox
@@ -11,4 +11,4 @@ sec-fetch-mode: cors
 sec-fetch-site: same-origin
 user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.69 Safari/537.36
 x-requested-with: XMLHttpRequest
-x-xsrf-token: 62f9f6
+x-xsrf-token: 640c6f
