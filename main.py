@@ -5,7 +5,10 @@ from modle import *
 bot = CQHttp()
 ex = mess()
 state_num = 1  # 初始状态
-help_text = """ 查题，微博热榜，土味情话，毒鸡汤"""
+help_text = """ 状态0：舔狗，土味情话，毒鸡汤
+状态1：查题 输入“查题“进入
+状态1：聊天 输入“聊天”进入”
+"""
 
 from exam import ser
 
