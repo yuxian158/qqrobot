@@ -9,4 +9,4 @@ def ser(ch: str) -> str:
                 return lin
 
 
-print(ser("马克思主义中国化"))
+

@@ -1,7 +1,6 @@
 from aiocqhttp.default import on_message, send, api, run, CQHttp
 
 from modle import *
-# from xiaobin import chat
 
 bot = CQHttp()
 ex = mess()
