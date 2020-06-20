@@ -1,5 +1,3 @@
-import urllib.parse
-
 import requests
 
 class mess():
@@ -31,18 +29,6 @@ class mess():
             res = res + i['hot_word'] + "  热度: " + i['hot_word_num'] + '\n'
         return res
 
-
-def ser_title(text):
-    title = text
-    last = urllib.parse.quote(title)
-    data = 'question=' + last
-    url = "http://cx.icodef.com/wyn-nb"
-    headers = {
-        'Content-type': 'application/x-www-form-urlencoded',
-        'Authorization': ''
-    }
-    data3 = requests.post(url, headers=headers, data=data)
-    return data3.json()['data']
 
 def chat(question:chr) ->chr:
     data = {

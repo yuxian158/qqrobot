@@ -1,3 +1,3 @@
-# qqrobot
-##依赖列表requirements.txt
+# QQrobot
+    依赖列表requirements.txt
       
