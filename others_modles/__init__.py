@@ -5,9 +5,7 @@ ex = mess()
 
 
 def reply(problem):
-    if ser(problem):
-        return ser(problem)
-    elif problem == "舔狗":
+    if problem == "舔狗":
         return ex.get_tiangou()
     elif problem == "毒鸡汤":
         return ex.get_soul()

@@ -2,15 +2,21 @@ import re
 import urllib.parse
 import requests
 
+
 def _ser(ch: str) -> str:
     with open("D:\qqrobot\qqrobot\exam\dome.txt", 'r', encoding='utf8') as f:
         read = f.readlines()
         for lin in read:
-            if re.match(".*" + ch + ".*", lin):
+            if re.match(r".*" + ch + ".*", lin):
                 return lin
 
-def ser(ch:str) -> str:
+
+def ser(ch: str) -> str:
     return _ser(ch)
+
+
+print(ser("Please"))
+
 
 def ser_title(text):
     title = text

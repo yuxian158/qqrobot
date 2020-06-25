@@ -1,5 +1,6 @@
 import requests
 
+
 class mess():
     url = 'https://v1.alapi.cn/api/'
 
@@ -30,7 +31,7 @@ class mess():
         return res
 
 
-def chat(question:chr) ->chr:
+def chat(question: chr) -> chr:
     data = {
         'key': '3ce2951c30dd74e25803f05efb48dafa',
         'question': question
